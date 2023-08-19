@@ -23,14 +23,13 @@ namespace Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("CurrentDirection")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.Property<int>("CurrentDirection")
+                        .HasColumnType("INTEGER");
 
                     b.Property<bool>("IsAlive")
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("LastLocationDateTime")
+                    b.Property<DateTime>("LocationDateTime")
                         .HasColumnType("TEXT");
 
                     b.Property<long>("XPosition")

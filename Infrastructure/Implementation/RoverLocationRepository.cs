@@ -1,3 +1,5 @@
+
+using Domain.DTOs;
 using Domain.Entities;
 using Infrastructure.Abstractions;
 using Infrastructure.EfCore;
@@ -14,7 +16,7 @@ public class RoverLocationRepository : IRoverLocationRepository
         _db = db;
     }
 
-    public async Task<RoverLocation> GetLastLocationAsync()
+    public async Task<RoverLocationDto> GetLastLocationAsync()
     {
         var result = await _db.RoverLocations!
             .OrderByDescending(d => d.LastLocationDateTime)

@@ -1,3 +1,4 @@
+using Domain.DTOs;
 using Domain.Entities;
 using Infrastructure.Abstractions;
 using Microsoft.AspNetCore.Mvc;
@@ -22,7 +23,7 @@ public class RoverLocationController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> AddLocation(RoverLocation location)
+    public async Task<IActionResult> AddLocation(RoverLocationDto location)
     {
         await _locationRepository.AddLocationAsync(location);
         return Ok(location);
