@@ -1,5 +1,4 @@
-﻿using Confluent.Kafka;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
@@ -36,13 +35,13 @@ public class BackgroundConsumerService : BackgroundService
         return base.StartAsync(cancellationToken);
     }
 
-
-    [Obsolete("Obsolete")]
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        var result = _kafkaConsumer.Consume(_topic);
-        _logger.LogInformation("Consume result: {@Key}; {@Message}; {@Headers}", result.Key, result.Message,
-            result.Headers);
-        await Task.Delay(_delayTime, stoppingToken);
+        while (!stoppingToken.IsCancellationRequested)
+        {
+            var result = _kafkaConsumer.Consume(_topic);
+            _logger.LogInformation($"Consume result: {result.Message.Value} {result.Message.Key} {result.Offset}");
+            await Task.Delay(_delayTime, stoppingToken);
+        }
     }
 }

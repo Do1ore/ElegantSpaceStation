@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical" MembersFormat="FullSignature">
+  <Class Name="Infrastructure.EfCore.AppDbContext">
+    <Position X="14" Y="7.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EfCore\AppDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Infrastructure.Implementation.RoverLocationRepository" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="5.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAIBAAAAAAAAAAAA=</HashCode>
+      <FileName>Implementation\RoverLocationRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Infrastructure.Kafka.BackgroundConsumerService">
+    <Position X="0.5" Y="0.5" Width="9" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEBAAAAAAAAAAAIAAAAAAAAQAQAAAAAEA=</HashCode>
+      <FileName>Kafka\BackgroundConsumerService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Infrastructure.Kafka.KafkaConsumerService">
+    <Position X="9.75" Y="2" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kafka\KafkaConsumerService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Infrastructure.Migrations.Initial">
+    <Position X="12.75" Y="5.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAI=</HashCode>
+      <FileName>Migrations\20230817212508_Initial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Infrastructure.Migrations.RoverLocationUpdate">
+    <Position X="0.5" Y="3.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAI=</HashCode>
+      <FileName>Migrations\20230817213053_RoverLocationUpdate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Infrastructure.Migrations.newUpdate">
+    <Position X="8.25" Y="3.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAI=</HashCode>
+      <FileName>Migrations\20230818172810_newUpdate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Infrastructure.Migrations.AppDbContextModelSnapshot">
+    <Position X="9.75" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Migrations\AppDbContextModelSnapshot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.DTOs.RoverLocationDto">
+    <Position X="4.5" Y="7.5" Width="4.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Domain.Entities.RoverLocation">
+    <Position X="9.25" Y="7.5" Width="4.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Domain.Entities.Surface">
+    <Position X="8.5" Y="5.5" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Domain.Entities.RobotRover">
+    <Position X="0.5" Y="7.5" Width="3.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Domain.Enums.DirectionEnumExtensions">
+    <Position X="4.75" Y="3.5" Width="3" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Domain.Enums.Direction">
+    <Position X="12.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Domain.Enums.Turn">
+    <Position X="10.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="Infrastructure.Abstractions.IRoverLocationRepository">
+    <Position X="0.5" Y="5.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstractions\IRoverLocationRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
